@@ -1,6 +1,19 @@
+let playlist = []
 
+function addSong() {
+    let title = document.getElementById("songTitle").value;
+    let artist = document.getElementById("artist").value;
+    let duration = document.getElementById("duration").value;
 
-
+    
+    const song = {
+        songTitle: title,
+        songArtist: artist,
+        songDuration: duration
+    }
+    playlist.push(song)
+    displayPlaylist()
+}
 
 
 
